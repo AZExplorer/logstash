@@ -48,6 +48,9 @@ Removed non-OCI compliant freeform metadata labels, started using consistent bui
 ===== Exclude file with non-commercial license
 Bundled did_you_mean gem had a CC NonCommercial license in an included file, these files has been removed. https://github.com/elastic/logstash/pull/12460[#12460]
 
+===== Support recreation of same pipeline through centralized pipeline management
+When users attempted to delete and recreate a pipeline with the same identifier and configuration, Logstash was unable to pick up the new pipeline. https://github.com/elastic/logstash/issues/12387[#12387]
+
 ==== Plugins
 
 *Azure_event_hubs Input - 1.2.3*
