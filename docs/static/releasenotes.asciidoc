@@ -44,6 +44,7 @@ This section summarizes the changes in the following releases:
 
 ===== Fix docker image metadata
 Removed non-OCI compliant freeform metadata labels, started using consistent build date for all the docker images and dockerfiles. https://github.com/elastic/logstash/pull/12451[#12451]
+Reintroduces the labels for the ubi8 image only. https://github.com/elastic/logstash/pull/12500[#12500]
 
 ===== Exclude file with non-commercial license
 Bundled did_you_mean gem had a CC NonCommercial license in an included file, these files has been removed. https://github.com/elastic/logstash/pull/12460[#12460]
@@ -56,14 +57,6 @@ When users attempted to delete and recreate a pipeline with the same identifier 
 *Azure_event_hubs Input - 1.2.3*
 
 * Fixed missing configuration of `prefetch_count` and `receive_timeout` https://github.com/logstash-plugins/logstash-input-azure_event_hubs/pull/61[#61]
-
-*Elasticsearch Output - 10.7.3*
-
-* Added composable index template support for elasticsearch version 8 https://github.com/logstash-plugins/logstash-output-elasticsearch/pull/980[#980]
-
-* [DOC] Fixed links to restructured Logstash-to-cloud docs https://github.com/logstash-plugins/logstash-output-elasticsearch/pull/975[#975]
-
-* [DOC] Document the permissions required in secured clusters https://github.com/logstash-plugins/logstash-output-elasticsearch/pull/969[#969]
 
 *Http Input - 3.3.6*
 
